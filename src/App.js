@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+// import { useSelector } from "react-redux";
+import VotingApp from "./component/votingApp";
+import Submit from "./component/submit"
+// import store from "./redux/store"
+import "./App.css";
 
 function App() {
+  // const programmingLangs = useSelector(data => data);
+  // console.log(programmingLangs, "<<<<<<<<<<<");
+  // store.getState()
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h3>
+      Voting App
+      </h3>
+      <VotingApp />
+      <Submit/>
     </div>
   );
 }
 
 export default App;
+
+//1.30.26
