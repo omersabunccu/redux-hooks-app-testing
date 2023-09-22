@@ -1,12 +1,16 @@
 import { bindActionCreators } from "redux";
 import { submitResult } from "../../assets/submitResultData";
-import { submit } from "../actions";
+import { submit, restart } from "../actions";
 // import * as action from "../redux/actions"
 function reducerForSubmit(state = submitResult, action) {
-  if (action.type === submit){
-    return action.payload.message
+  switch(action.type){
+    case submit:
+      return action.payload.message
+    case restart:
+      return action.payload.message
+    default:
+      return state
   }
-  return state
 }
 
 export default reducerForSubmit;
