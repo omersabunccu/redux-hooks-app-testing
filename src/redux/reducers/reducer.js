@@ -1,5 +1,5 @@
-import { data } from "../assets/data"
-import { incrementVote } from "./actions";
+import { data } from "../../assets/data"
+import { incrementVote } from "../actions";
 function reducer(state = data, actions) {
   if(actions.type===incrementVote){
     const newArra=[]

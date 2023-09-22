@@ -1,7 +1,7 @@
 import { createStore, combineReducers } from "redux";
 
-import reducer from "./reducer";
-import reducerForSubmit from "./reducerSubmit";
+import reducer from "./reducers/reducer";
+import reducerForSubmit from "./reducers/reducerSubmit";
 const allReducers = combineReducers({
     votingApp: reducer,
     submitResult: reducerForSubmit

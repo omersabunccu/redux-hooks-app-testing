@@ -1,6 +1,6 @@
 import { bindActionCreators } from "redux";
-import { submitResult } from "../assets/submitResultData";
-import { submit } from "../redux/actions";
+import { submitResult } from "../../assets/submitResultData";
+import { submit } from "../actions";
 // import * as action from "../redux/actions"
 function reducerForSubmit(state = submitResult, action) {
   if (action.type === submit){
